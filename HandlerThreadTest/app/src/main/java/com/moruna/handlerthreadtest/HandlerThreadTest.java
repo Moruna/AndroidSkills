@@ -34,6 +34,12 @@ public class HandlerThreadTest extends AppCompatActivity {
         }).start();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        handlerThread.quit();
+    }
+
     private class ConcreteHandler extends Handler {
         private ConcreteHandler(Looper looper) {
             //如果不super looper，则还会运行在主线程
