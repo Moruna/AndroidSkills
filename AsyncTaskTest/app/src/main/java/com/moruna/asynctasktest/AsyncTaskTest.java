@@ -29,7 +29,12 @@ public class AsyncTaskTest extends AppCompatActivity {
     }
 
     public void click(View view) {
+        //默认：任务只能单个的按顺序执行
         new DownloadTask().execute("http://pic129.nipic.com/file/20170516/20614752_221848813000_2.jpg");
+
+        //指定任务并行并行处理
+//        new DownloadTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR,
+//                "http://pic129.nipic.com/file/20170516/20614752_221848813000_2.jpg");
     }
 
     /**
