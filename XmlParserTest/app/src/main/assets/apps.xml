@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<desktop>
+
+    <item>
+        <name>A</name>
+        <package>packageA</package>
+    </item>
+
+    <item>
+        <name>B</name>
+        <package>packageB</package>
+    </item>
+
+</desktop>
