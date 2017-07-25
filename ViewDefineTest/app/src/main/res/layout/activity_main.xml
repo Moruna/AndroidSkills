@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    tools:context="com.moruna.viewdefinetest.MainActivity">
+
+    <ImageView
+        android:id="@+id/ic_voice"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@mipmap/icon"
+        android:layout_gravity="center"/>
+
+    <com.moruna.viewdefinetest.view.RingView
+        android:layout_width="300dip"
+        android:layout_height="300dip"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
