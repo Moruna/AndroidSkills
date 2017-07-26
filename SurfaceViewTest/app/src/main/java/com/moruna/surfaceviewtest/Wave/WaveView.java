@@ -34,7 +34,6 @@ public class WaveView extends RenderView{
     }
 
     private final Paint paint = new Paint();
-
     {
         paint.setDither(true);
         paint.setAntiAlias(true);
@@ -81,7 +80,6 @@ public class WaveView extends RenderView{
      * 每个元素都是一个float[2]，用于保存xy值
      */
     private final float[][] crestAndCrossPints = new float[CROSS_POINT_NUM][];
-
     {//直接分配内存
         for (int i = 0; i < CROSS_POINT_NUM; i++) {
             crestAndCrossPints[i] = new float[2];
