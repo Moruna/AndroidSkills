@@ -6,12 +6,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
-import android.view.View;
 
 /**
  * Author: Moruna
@@ -82,7 +79,7 @@ public class SinView extends SurfaceView implements Callback {
     private void draw() {
         try {
             canvas = holder.lockCanvas();
-            //背景
+            //画背景
             canvas.drawColor(Color.WHITE);
             canvas.drawPath(path, paint);
         } catch (Exception e) {
